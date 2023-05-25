@@ -71,3 +71,22 @@ body{
 .col-2{
   grid-column: span 2;
 }
+
+
+/* Responsive fro width <= 1024px*/
+
+@media screen and (max-width: 1024px){
+  .container{
+    flex-direction: column;
+    padding-block: 30px;
+  }
+  .gallery{
+    width: 100%;
+    grid-auto-rows: 220px;
+  }
+  .box{
+    grid-row: span 1;
+    grid-column: span 3;
+  }
+}
+
